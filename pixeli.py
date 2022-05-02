@@ -42,10 +42,8 @@ def get_input_filename(arg_input_path):
 
 def get_output_filename(img_output_filename, img_output_format, img_resolution):
     if img_output_format:
-        img_output_filename = f"./image_output/{img_output_filename}_{img_resolution[0]}x{img_resolution[1]}{img_output_format}"
-    else:
-        img_output_filename = f"./image_output/{img_output_filename}_{img_resolution[0]}x{img_resolution[1]}.png"
-    return img_output_filename
+        return f"./image_output/{img_output_filename}_{img_resolution[0]}x{img_resolution[1]}{img_output_format}"
+    return f"./image_output/{img_output_filename}_{img_resolution[0]}x{img_resolution[1]}.png"
 
 
 def resize_image(image_input_filename, img_output_filename, img_resolution):
