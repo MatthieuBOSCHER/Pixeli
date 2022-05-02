@@ -1,3 +1,6 @@
-/image_input
-/image_output
+/image_input/*
+!/image_input/.gitkeep
+/image_output/*
+!/image_output/.gitkeep
+
 .idea
